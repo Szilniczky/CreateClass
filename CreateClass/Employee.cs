@@ -11,6 +11,14 @@ namespace CreateClass
         int salary = 500;
         String profession = "student";
 
+        public Employee(String name, int birthDate, Genders genders, int salary, String profession): base("David", 1993, Genders.Male)
+        {
+            this.salary = salary;
+            this.profession = profession;
+        }
+
+      
+
         public override string ToString()
         {
             return salary + " , " + profession;

@@ -6,11 +6,20 @@ using System.Threading.Tasks;
 
 namespace CreateClass
 {
+    public enum Genders { Male, female };
+
     class Person
     {
         String name = "David";
         int birthDate = 1993;
-        enum Genders { Male, female };
+        private Genders genders;
+
+        public Person(String name, int birthDate, Genders genders)
+        {
+            this.name = name;
+            this.birthDate = birthDate;
+            this.genders = genders;
+        }
 
         public override string ToString()
         {
