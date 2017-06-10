@@ -16,7 +16,7 @@ namespace CreateClass
             Console.WriteLine(person.ToString());
             Console.WriteLine(employee.ToString());
             Console.WriteLine(room.ToString());
-
+            Console.ReadLine();
         }
     }
 }
