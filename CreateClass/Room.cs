@@ -10,10 +10,12 @@ namespace CreateClass
     {
         int number = 1;
 
-        public Room(int salary, String profession, int number): base("David", 1993, Genders.Male, 500, "student")
+        public Room(int number): base("David", 1993, Genders.Male, 500, "student")
         {
             this.number = number;
         }
+
+        public int Number { get; internal set; }
 
         public override string ToString()
         {
